@@ -21,15 +21,15 @@
 		};
 		return directive;
 
-		function link(scope, element, attrs) {
+		function link(scope, element, attr) {
 			${6}
 		}
 	}
 
-	${4:ControllerName}.\$inject = [${3/(\$(\w+)|\w+)/'$1'/g}];
+	${4:ControllerName}.\$inject = ['\$scope'];
 
 	/* @ngInject */
-	function ${4:ControllerName}(${3:dependency}) {
+	function ${4:ControllerName}(\$scope) {
 		${7}
 	}
 
